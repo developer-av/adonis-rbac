@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-adonis install adonis-rbac --yarn
+adonis install https://github.com/developer-av/adonis-rbac.git --yarn
 ```
 
 ## Setup
