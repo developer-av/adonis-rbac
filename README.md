@@ -84,3 +84,16 @@ adonis install adonis-rbac --yarn
       throw new HttpException('Forbidden.', 403)
     }
     ```
+   or
+   ```js
+   // start/kernel.js
+   const namedMiddleware = {
+    rbac: 'Rbac/Middleware/Rbac',
+   }
+   
+   
+   // start/routes.js
+   Route
+   .get('users/:id', 'UserController.show')
+   .middleware('rbac:posts.index')
+   ```
