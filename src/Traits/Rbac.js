@@ -46,7 +46,6 @@ module.exports = class Rbac {
           return true
         }
       }
-      console.error('rbac:', permission, false)
       return false
     }
   }
